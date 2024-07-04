@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #120803;
+    color: #fff;
+    text-align: center;
+    border-top: 2px solid #18181C;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #120803;
+    position: relative;
+    border-bottom: 2px solid #18181C;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Center align navigation links */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 10px;
+    background: #1C222D;
+    font-size: 16px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.login {
+    position: absolute;
+    right: 20px;
+    margin-right: 20px; /* Adjusted margin from the right */
+}
+
+.login button {
+    background-color: #9C5A2B;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Default font size */
+    cursor: pointer;
+}
+
+.main-image {
+    background-image: url('images/sgp_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+button#sendBtn {
+    background-color: #a15b3c;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 190px;
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 24px;
+}
+
+button#sendBtn span {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+   
+
+    .login {
+        position: static;
+        margin: 10px auto; /* Center align and adjust margin */
+    }
+
+    .login button {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+        padding: 12px 24px; /* Adjusted padding */
+    }
+
+    #file-list-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout for file list */
+    }
+
+    .image-container img,
+    .pdf-container embed {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
